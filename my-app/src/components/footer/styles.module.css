@@ -1,0 +1,12 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    font-family: sans-serif;
+}
+
+.footer > div:last-of-type {
+    font-size: 13px;
+    color: gray;
+}
+

@@ -1,0 +1,30 @@
+.header {
+    position: relative;
+    font-family: sans-serif;
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+    padding: 20px 0;
+}
+
+.header > div:first-of-type {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header > div:last-of-type {
+    margin-left: auto;
+    margin: auto 0 auto auto;
+    max-width: 50%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: fit-content;
+    display: flex;
+    gap: 20px;
+}
+
+.header a {
+    text-decoration: none;
+}
