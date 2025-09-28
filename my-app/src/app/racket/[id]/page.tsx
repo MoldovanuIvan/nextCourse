@@ -2,23 +2,7 @@ import {FC} from "react";
 import styles from './styles.module.css'
 import {rackets} from "../../../../public/mock";
 import Image from 'next/image'
-
-export interface IRacket {
-    id: number
-    name: string
-    imageUrl: string
-    price: number
-    type: string
-    model: string
-    year: number
-    top10: boolean
-    description: string
-    brandId: number
-    brand: {
-        id: number
-        name: string
-    }
-}
+import {IRacket} from "@/types/racket";
 
 interface IRacketPageProps {
     params: Promise<{id: string}>

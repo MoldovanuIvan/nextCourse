@@ -1,6 +1,7 @@
 .container {
     max-width: 390px;
     max-height: 390px;
+    min-width: 390px;
     text-decoration: none;
 }
 

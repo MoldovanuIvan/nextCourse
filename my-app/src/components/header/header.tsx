@@ -1,8 +1,8 @@
 "use client"
 
 import styles from './styles.module.css'
-import Link from "next/link";
 import {usePathname} from "next/navigation";
+import {Link} from "@/components/link/link";
 
 const Header =  () => {
     const pathname = usePathname()
@@ -10,8 +10,8 @@ const Header =  () => {
     return <header className={styles.header}>
         <div className={styles.title}>TENNIS STORE</div>
         <div>
-            <Link style={{color: pathname === '/' ? 'orange' : 'black'}} href={'/'}>Главная</Link>
-            <Link style={{color: pathname === '/rackets' ? 'orange' : 'black'}} href={'/rackets'}>Ракетки</Link>
+            <Link href={'/'}>Главная</Link>
+            <Link href={'/rackets'}>Ракетки</Link>
         </div>
     </header>
 }
