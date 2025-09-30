@@ -1,17 +1,15 @@
 import { IRacket } from "@/types/racket";
 import { Response } from "@/types/response";
-import {BASE_API_URL} from "@/constants/api";
+import { BASE_API_URL } from "@/constants/api";
 
 export const getTop10Rackets = async (): Promise<Response<IRacket[]>> => {
-    const result = await fetch(
-        `${BASE_API_URL}/top-10`
-    );
+  const result = await fetch(`${BASE_API_URL}/top-10`);
 
-    if (!result.ok) {
-        return { isError: true, data: undefined };
-    }
+  if (!result.ok) {
+    return { isError: true, data: undefined };
+  }
 
-    const data: IRacket[] = await result.json();
+  const data: IRacket[] = await result.json();
 
-    return { isError: false, data };
+  return { isError: false, data };
 };

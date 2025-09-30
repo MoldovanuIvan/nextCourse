@@ -1,18 +1,18 @@
 .container {
-    padding: 30px 10px 50px;
-    border-bottom: 1px solid lightgray;
+  padding: 30px 10px 50px;
+  border-bottom: 1px solid lightgray;
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 .cardsContainer {
-    display: flex;
-    justify-content: space-between;
-    gap: 15px;
-    overflow-x: scroll;
-    height: 415px;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  overflow-x: scroll;
+  height: 415px;
 }

@@ -1,3 +1,3 @@
-const Loading = () => 'loading...'
+const Loading = () => "loading...";
 
-export default Loading
+export default Loading;

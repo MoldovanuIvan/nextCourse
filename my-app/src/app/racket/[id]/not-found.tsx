@@ -1,3 +1,3 @@
 export default function NotFound() {
-    return 'Racket not found'
+  return "Racket not found";
 }
