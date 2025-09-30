@@ -1,29 +1,29 @@
 .wrapper {
-    margin: 50px 0;
-    display: flex;
-    gap: 50px;
-    padding-bottom: 30px;
-    border-bottom: 1px solid lightgray;
+  margin: 50px 0;
+  display: flex;
+  gap: 50px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid lightgray;
 }
 
 .title {
-    font-weight: bold;
-    font-size: 32px;
-    margin-bottom: 30px;
-    line-height: 32px;
+  font-weight: bold;
+  font-size: 32px;
+  margin-bottom: 30px;
+  line-height: 32px;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
 }
 
 .nav p {
-    font-size: 15px;
-    color: lightgray;
+  font-size: 15px;
+  color: lightgray;
 }
 
 .nav li {
-    font-size: 15px;
+  font-size: 15px;
 }

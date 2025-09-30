@@ -1,9 +1,9 @@
 import { RacketCard } from "@/components/racketCard";
-import styles from "./styles.module.css";
-import { getRackets } from "@/secvices/get-rackets";
+import styles from "../styles.module.css";
+import { getTop10Rackets } from "@/secvices/get-top-10-rackets";
 
-const RacketsPage = async () => {
-  const { isError, data: rackets } = await getRackets({ limit: 20 });
+const Top10Page = async () => {
+  const { isError, data: rackets } = await getTop10Rackets();
 
   if (isError) return "error";
 
@@ -20,7 +20,7 @@ const RacketsPage = async () => {
         </ol>
       </nav>
       <div>
-        <div className={styles.title}>Ракетки</div>
+        <div className={styles.title}>Топ 10</div>
         <div className={styles.container}>
           {rackets.map((racket) => (
             <RacketCard key={racket.id} {...racket} />
@@ -31,4 +31,4 @@ const RacketsPage = async () => {
   );
 };
 
-export default RacketsPage;
+export default Top10Page;
