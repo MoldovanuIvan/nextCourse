@@ -1,6 +1,12 @@
 import { RacketCard } from "@/components/racketCard";
 import styles from "../styles.module.css";
 import { getTop10Rackets } from "@/secvices/get-top-10-rackets";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Top 10",
+  description: "Top 10",
+};
 
 const Top10Page = async () => {
   const { isError, data: rackets } = await getTop10Rackets();

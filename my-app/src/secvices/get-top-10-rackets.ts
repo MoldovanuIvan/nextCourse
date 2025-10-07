@@ -3,7 +3,11 @@ import { Response } from "@/types/response";
 import { BASE_API_URL } from "@/constants/api";
 
 export const getTop10Rackets = async (): Promise<Response<IRacket[]>> => {
-  const result = await fetch(`${BASE_API_URL}/top-10`);
+  const result = await fetch(`${BASE_API_URL}/top-10`, {
+    next: {
+      tags: ["top10"],
+    },
+  });
 
   if (!result.ok) {
     return { isError: true, data: undefined };
